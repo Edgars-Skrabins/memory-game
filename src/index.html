@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Guessing Game</title>
+</head>
+<body>
+
+<section class ="js-menu-section js-section">
+
+    <div class="menu">
+        <button class ="button menu__play-button js-menu__play-button"> Play! </button>
+        <p class ="js-menu-highscore-text menu-highscore-text"></p>
+    </div>
+
+</section>
+
+<section class ="js-game-section js-section hidden">
+    <div class="score__wrapper">
+
+        <p class ="score-header"> SCORE </p>
+        <p class ="js-score-counter score-counter">0</p>
+
+    </div>
+
+    <div class="cards">
+        <div class="cards__column">
+
+            <div class="cards__row">
+
+                <div class="cards__card js-card"></div>
+                <div class="cards__card js-card"></div>
+                <div class="cards__card js-card"></div>
+
+            </div>
+
+            <div class="cards__row">
+
+                <div class="cards__card js-card"></div>
+                <div class="cards__card js-card"></div>
+                <div class="cards__card js-card"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class ="js-losescreen-section js-section hidden">
+
+    <div class="losescreen">
+
+        <p class ="losescreen-text"> YOU LOSE! </p>
+
+        <button class="button losescreen-restart-button js-losescreen-restart-button"> Restart </button>
+        <button class="button losescreen-menu-button js-losescreen-menu-button"> Back to Menu </button>
+
+        <div class="stats__wrapper">
+
+            <p class ="stats-time js-stats-time"> Time survived: 1 minute</p>
+            <p class ="stats-moves js-stats-moves">Moves taken: 5</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>

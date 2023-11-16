@@ -1,0 +1,240 @@
+:root{
+  --c-bg: #253f49;
+  --c-text: #ffda15;
+
+  --c-bg-btn: #66d5d5;
+  --c-t-btn: #000000;
+}
+
+body {
+  font-family: "Comic Sans MS";
+  background-color: var(--c-bg);
+  color: var(--c-text);
+
+  margin: 0;
+  padding:0;
+}
+
+.js-section{
+  // Javascript behavior class, don't modify
+}
+
+.button{
+  background-color: var(--c-bg-btn);
+  color: var(--c-t-btn);
+  border-radius: 2rem;
+  border-style: none;
+  font-size: 3rem;
+  font-weight: bolder;
+
+  padding: 1.2rem 2.5rem;
+
+  &:hover{
+    cursor:pointer;
+  }
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+}
+
+.menu__play-button{
+
+  transition: 0.13s;
+
+  &:hover{
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  &:active{
+    transform: scale(1.1);
+    padding: 1.3rem 2.9rem;
+  }
+}
+
+.js-menu__play-button{
+  // Javascript behavior class, don't modify
+}
+
+.score__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-header{
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.score-counter{
+  margin: 1.4rem 0 2.8rem 0;
+  font-size: 5rem;
+}
+
+.js-score-counter{
+  // Javascript behavior class, don't modify
+}
+
+.cards__column{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+}
+
+.cards__row{
+  display:flex;
+  flex-direction: row;
+  gap:3rem;
+
+}
+
+.cards__card{
+  box-sizing: border-box;
+  //background: linear-gradient(to right, #94ffec, #40c492);
+  background: radial-gradient(circle, #ffe9b9, #ad9b6d);
+  border-radius: 1rem 0.2rem 1rem 0.2rem;
+  min-width: 10rem;
+  min-height: 15rem;
+
+  transition: 0.06s;
+  transition: border-radius 0.10s;
+
+  &:hover{
+    border-style: solid;
+    border-width: 0.23rem;
+    border-color: black;
+    border-radius: 1.4rem 0.35rem 1.4rem 0.35rem;
+    transform:scale(1.05);
+    cursor:pointer;
+  }
+
+}
+
+.js-card{
+  // Javascript behavior class, don't modify
+}
+
+.red{
+  background: radial-gradient(circle, #ff2429, #730000);
+}
+
+.green{
+  background: radial-gradient(circle, #1fff00, #427c00);
+
+}
+
+.blue{
+  background: radial-gradient(circle, #0741ff, #002d80);
+}
+
+.js-menu-section{
+
+}
+
+.js-game-section{
+
+}
+
+.js-losescreen-section{
+
+}
+
+.js-losescreen-restart-button{
+
+}
+
+.losescreen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  gap: 2rem;
+}
+
+.losescreen-text{
+  font-size: 2rem;
+}
+
+.losescreen-restart-button{
+
+  transition: 0.13s;
+
+  &:hover{
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  &:active{
+    transform: scale(1.1);
+    padding: 1.3rem 2.9rem;
+  }
+}
+
+.losescreen-menu-button{
+  transition: 0.13s;
+
+  &:hover{
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  &:active{
+    transform: scale(1.1);
+    padding: 1.3rem 2.9rem;
+  }
+}
+
+.js-losescreen-menu-button{
+
+}
+
+.hidden{
+  display:none;
+}
+
+.menu-highscore-text{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.js-menu-highscore-text{
+
+}
+
+.stats__wrapper{
+  display:flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.stats-time{
+  font-size: 2rem;
+}
+
+.stats-moves{
+  font-size: 2rem;
+}
+
+.js-stats-moves{
+
+}
+
+.js-stats-time{
+
+}
